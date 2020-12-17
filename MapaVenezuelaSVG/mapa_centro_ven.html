@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head>
+ <title>Assignatura WEC: Mapa</title>
+ 
+ <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+<div class="homeMain">
+    	<ul class="listOfCounties">
+		<li><a id="aragua2" onmouseover="cambia_color('aragua');" onmouseout="volver_color('aragua');" title="Aragua" href="https://es.wikipedia.org/wiki/Estado_Aragua">Aragua</a></li>
+		<li><a id="carabobo2" onmouseover="cambia_color('carabobo');" onmouseout="volver_color('carabobo');" title="Carabobo" href="https://es.wikipedia.org/wiki/Estado_Carabobo">Carabobo</a></li>
+		<li><a id="caracas2" onmouseover="cambia_color('caracas');" onmouseout="volver_color('caracas');" title="Caracas" href="https://es.wikipedia.org/wiki/Caracas">Caracas</a></li>
+		<li><a id="cojedes2" onmouseover="cambia_color('cojedes');" onmouseout="volver_color('cojedes');" title="Cojedes" href="https://es.wikipedia.org/wiki/Estado_Cojedes">Cojedes</a></li>
+        <li><a id="miranda2" onmouseover="cambia_color('miranda');" onmouseout="volver_color('miranda');" title="Miranda" href="https://es.wikipedia.org/wiki/Estado_Miranda">Miranda</a></li>
+        <li><a id="vargas2" onmouseover="cambia_color('vargas');" onmouseout="volver_color('vargas');" title="Vargas" href="https://es.wikipedia.org/wiki/Estado_Vargas">Vargas</a></li>
+	</ul>
+    
+<div class="mapMain">
+    <h1>Mapa de la región Centro-Capital de Venezuela</h1>
+            <svg width="500" height="500"  >
+                <polygon id="aragua"
+                   points="170 129,230 125,237 139,246 133,253 138,264 134,259 148,270 162,270 180,286 188,293 196,335 199,339 220,330 230,340 249,337 254,342 269,326 290,284 271,281 261,294 258,302 241,259 207,246 207,229 197,215 200,207 194,190 193,196 160,192 149,172 149,161 141,170 129" style="fill:#7cfa85;stroke:#88aaff;stroke-width:2" />
+                <polygon id="carabobo" 
+                   points="92 118,116 120,125 127,154 131,170 129,161 141,172 149,192 149,196 160,190 192,206 194,215 200,212 207,190 220,170 205,168 217,153 219,115 200,115 176,95 193,90 170,100 157,89 145,92 118" style="fill:#7cfa85;stroke:#88aaff;stroke-width:2" />
+                <polygon id="caracas" 
+                   points="264 134,278 118,307 121,305 128,285 139,270 140,264 134" style="fill:#7cfa85;stroke:#88aaff;stroke-width:2" />
+                <polygon id="cojedes" 
+                   points="96 192,114 175,115 200,151 218,169 216,181 233,150 254,165 330,138 365,146 390,138 397,123 387,68 386,43 362,62 350,54 333,62 320,53 298,28 283,7 226,16 210,16 193,29 191,47 203,61 194,70 194,73 207,96 192" style="fill:#7cfa85;stroke:#88aaff;stroke-width:2" />
+                <polygon id="miranda" 
+                   points="372 110,386 104,393 113,406 113,401 121,406 130,450 164,495 172,464 201,452 202,438 195,418 199,407 195,382 198,369 187,346 199,335 199,293 196,286 188,270 180,270 162,259 148,264 134,270 140,285 139,305 128,307 121,322 116,371 119,372 110" style="fill:#7cfa85;stroke:#88aaff;stroke-width:2" />
+                <polygon id="vargas" 
+                   points="230 125,254 119,280 107,312 103,372 110,370 120,320 115,307 121,278 118,264 134,253 137,247 132,236 142,230 125" style="fill:#7cfa85;stroke:#88aaff;stroke-width:2" />
+            </svg>
+            <img src="img/blanco.png" width="500" height="500" class="map" usemap="#spain_map"/>
+
+    
+
+
+</div>
+
+
+<!-- Map Area -->
+    <map id="spain_map" name="spain_map" >
+        <area onMouseOver="cambia_color('aragua');" onMouseOut="volver_color('aragua');" shape="poly" coords="170 129,230 125,237 139,246 133,253 138,264 134,259 148,270 162,270 180,286 188,293 196,335 199,339 220,330 230,340 249,337 254,342 269,326 290,284 271,281 261,294 258,302 241,259 207,246 207,229 197,215 200,207 194,190 193,196 160,192 149,172 149,161 141,170 129" href="https://es.wikipedia.org/wiki/Estado_Aragua" title="Aragua"/>
+        
+        <area onMouseOver="cambia_color('carabobo');" onMouseOut="volver_color('carabobo');" shape="poly" coords="92 118,116 120,125 127,154 131,170 129,161 141,172 149,192 149,196 160,190 192,206 194,215 200,212 207,190 220,170 205,168 217,153 219,115 200,115 176,95 193,90 170,100 157,89 145,92 118" href="https://es.wikipedia.org/wiki/Estado_Carabobo" title="Carabobo" />
+
+        <area onMouseOver="cambia_color('caracas');" onMouseOut="volver_color('caracas');" shape="poly" coords="264 134,278 118,307 121,305 128,285 139,270 140,264 134" href="https://es.wikipedia.org/wiki/Caracas" title="Caracas"/>
+
+        <area onMouseOver="cambia_color('cojedes');" onMouseOut="volver_color('cojedes');" shape="poly" coords="96 192,114 175,115 200,151 218,169 216,181 233,150 254,165 330,138 365,146 390,138 397,123 387,68 386,43 362,62 350,54 333,62 320,53 298,28 283,7 226,16 210,16 193,29 191,47 203,61 194,70 194,73 207,96 192" href="https://es.wikipedia.org/wiki/Estado_Cojedes" title="Cojedes" />
+
+        <area onMouseOver="cambia_color('miranda');" onMouseOut="volver_color('miranda');" shape="poly" coords="372 110,386 104,393 113,406 113,401 121,406 130,450 164,495 172,464 201,452 202,438 195,418 199,407 195,382 198,369 187,346 199,335 199,293 196,286 188,270 180,270 162,259 148,264 134,270 140,285 139,305 128,307 121,322 116,371 119,372 110" href="https://es.wikipedia.org/wiki/Estado_Miranda" title="Miranda"  />
+
+        <area onMouseOver="cambia_color('vargas');" onMouseOut="volver_color('vargas');" shape="poly" coords="230 125,254 119,280 107,312 103,372 110,370 120,320 115,307 121,278 118,264 134,253 137,247 132,236 142,230 125" href="https://es.wikipedia.org/wiki/Estado_Vargas" title="Vargas"/>
+    </map>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background-color:#ccccff;
+    
+}
+h1,a{
+    font-family: Franklin Gothic;
+}
+
+img{
+    position: relative;
+    top: -500px;
+}
+.mapMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.listOfCounties{
+    float: right;
+    padding: 10% 10% 0 0;
+    margin-right: 10%;
+    list-style: none;
+    font-size: 25px;
+    text-align: right;
+}
+
+a:active,a:link,a:visited{
+    text-decoration: none;
+    color: black;
+}
