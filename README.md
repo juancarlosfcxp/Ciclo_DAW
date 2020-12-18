@@ -1,2 +1,2 @@
 # Ciclo_DAW
-## Ejerciicos Completos desaroolados durante el curso
+## Ejercicios Completos desarrollados durante el curso.
