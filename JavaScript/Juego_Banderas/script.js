@@ -4,6 +4,7 @@ var arrayDatos = [
     ['2', 'España', 'Madrid'],
     ['3', 'Francia', 'Paris'],
     ['4', 'Inglaterra', 'Londres'],
+    ['5', 'Venezuela', 'Caracas'],
     ['6', 'Italia', 'Roma'],
     ['7', 'Albania', 'Tirana'],
     ['8', 'Andorra', 'Andorra La Vella'],
@@ -46,6 +47,7 @@ var maximo = 10;
 var pila = [];
 var segundos = 5;
 var time = window.setInterval(contar, 1000);
+
 
 function jugar() {
     totalPreguntas++;
