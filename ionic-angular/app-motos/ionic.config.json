@@ -1,0 +1,7 @@
+{
+  "name": "PracticaMotos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

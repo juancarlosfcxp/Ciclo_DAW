@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+        <ion-title slot="start" size="small">Detalle Moto</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>{{detalle.modelo}}</ion-card-subtitle>
+            <ion-card-title>{{detalle.modelo}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <img src={{detalle.foto}}>
+            <p> Keep close to Nature's heart and break clear away, once in awhile, and climb a mountain or spend a week in the woods..
+            </p>
+        </ion-card-content>
+        <ion-button color="danger" (click)=borrarMotoConfirm(detalle.id) expand="block">
+            BORRAR MOTO
+        </ion-button><br>
+    </ion-card>
+</ion-content>

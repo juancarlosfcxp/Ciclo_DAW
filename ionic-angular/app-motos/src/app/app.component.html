@@ -1,0 +1,20 @@
+<ion-app>
+    <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>Marcas</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list *ngFor="let item of marcas">
+                <ion-menu-toggle auto-hide="true">
+                    <ion-item [routerLink]="['home']" [queryParams]="{ marca: item.nombre }">
+                        <ion-col size="3"><img src='{{item.imagen}}'></ion-col>
+                        <ion-col size="9">{{item.nombre}}</ion-col>
+                    </ion-item>
+                </ion-menu-toggle>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

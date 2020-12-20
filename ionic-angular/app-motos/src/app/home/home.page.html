@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar [color]="'primary'" mode="md">
+        <ion-buttons slot="start">
+            <ion-menu-toggle>
+                <ion-button>
+                    <ion-icon slot="icon-only" name="menu"></ion-icon>
+                </ion-button>
+            </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title size="small">
+            Escoje tu moto
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-item *ngFor="let moto of motos">
+        <ion-row routerLink="/detalle" (click)=seleccionar(moto)>
+            <ion-col size="3"><img src={{moto.foto}}></ion-col>
+            <ion-col size="9">{{moto.modelo}}</ion-col>
+        </ion-row>
+    </ion-item>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button size="small" routerLink="/altamoto">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>

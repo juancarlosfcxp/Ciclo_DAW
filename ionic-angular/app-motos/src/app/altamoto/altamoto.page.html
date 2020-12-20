@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar [color]="'primary'">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+        <ion-title slot="start" size="small">Subir una Moto</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label floating color="primary">Marca</ion-label>
+        <ion-input type="text" [(ngModel)]="inputMarca"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating color="primary">Modelo</ion-label>
+        <ion-input type="text" [(ngModel)]="inputModelo"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating color="primary">Año</ion-label>
+        <ion-input type="number" [(ngModel)]="inputYear"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating color="primary">Precio</ion-label>
+        <ion-input type="number" [(ngModel)]="inputPrecio"></ion-input>
+    </ion-item>
+    <ion-button color="success" expand="block" (click)="subirMoto()">Continuar</ion-button><br>
+
+</ion-content>
