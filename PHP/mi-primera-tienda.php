@@ -31,8 +31,10 @@
             printImagenes("imagenes/patines/");
             ?>
         </section>
-
             <?php
+
+            // Funcion que itera en un directorio y muestra todas las imagenes que se encuentren dentro
+            
             function printImagenes($ruta){
 
                 foreach (new DirectoryIterator($ruta) as $i) {
